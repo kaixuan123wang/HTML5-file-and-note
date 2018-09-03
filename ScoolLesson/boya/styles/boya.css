@@ -51,29 +51,45 @@ nav ul li a{
 	margin: 12px 35px;
 	border-left: 1px solid #191d3a;
 }
+/*滚动广告*/
 .banner{
 	position: relative;
 	width: 100%;
-	height: 465px;
 	overflow: hidden;
 }
-.banner>div>ul{
-	width: 1000%;
-	height: 465px;
+.banner>div{
+	width: 10000%;
+	height: 400px;
+	overflow: scroll;
 }
-.banner>div>ul>li{
+.banner>div>.ad>li{
+	position: relative;
+	width: 100%;
+	height: 400px;
 	float: left;
 	font-size: 0;
+	overflow: hidden;
 }
-.banner>div>ul>li>img{
+.banner>div>.ad>li>img{
+	position: relative;
+	width: 1%;
+	height: 400px;
+	float: left;
+}
+.banner>div>.num{
 	position: absolute;
-	width: 100%;
-	height: 595px;
+	top: 380px;
+	left:50%;
 }
-.num>li{
-	width: 1px;
-	height: 1px;
-	background: #000;
+.banner>div>.num>li{
+	position: relative;
+	width: 10px;
+	height: 10px;
+	float: left;
 	border-radius: 90px;
-	border: 1px solid #fff;
+	background: #ccc;
+	margin-left: 12px;
+}
+.banner>div>.num>li:hover{
+	background: #fff;
 }
