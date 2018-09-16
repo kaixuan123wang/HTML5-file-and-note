@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style>
+			.line{
+				position: relative;
+				width: 800px;
+				height: 30px;
+				border: 1px solid #000;
+				margin: 50px auto;
+				line-height: 30px;
+				text-align: center;
+			}
+			.line::before{
+				content: "";
+				position: absolute;
+				width: 150px;
+				border-top: 1px solid #000;
+				margin-top: 15px;
+				margin-left: -160px;
+			}
+			.line::after{
+				content: "";
+				position: absolute;
+				width: 150px;
+				border-top: 1px solid #000;
+				margin-top: 15px;
+				margin-right: -500px;
+			}
+			.head{
+				width: 100px;
+				height: 50px;
+				background: #f00;
+			}
+			.head::after{
+				content: "";
+				position: absolute;
+				width: 0px;
+				height: 0px;
+				border-left: 50px solid #f00;
+				border-bottom: 25px solid transparent;
+				border-top: 25px solid transparent;
+				margin-left: 100px;
+			}
+			.head:hover{
+				background: #ff0;
+			}
+			.head::after:hover{
+				content: "";
+				position: absolute;
+				width: 0px;
+				height: 0px;
+				border-left: 50px solid #f00;
+				border-bottom: 25px solid transparent;
+				border-top: 25px solid transparent;
+				margin-left: 100px;
+
+			}
+        </style>
+    </head>
+    <body>
+    <div class="line">汇报内容</div>
+    <div class="head"></div>
+    </body>
+</html>
