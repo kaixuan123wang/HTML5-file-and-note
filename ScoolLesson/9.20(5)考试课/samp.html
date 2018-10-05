@@ -2,66 +2,54 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>Document</title>
+        <!-- <link rel="stylesheet" href="https://cdn.bootcss.com/normalize/8.0.0/normalize.css"> -->
         <style>
 			*{
 				margin: 0;
 				padding: 0;
 			}
-			li{
-				list-style: none;
-			}
-			a{
-				text-decoration: none;
-				color: #000;
-			}
 			header,nav,article,aside,footer,section{
 				display: block;
-				overflow: hidden;
 			}
-			header>nav{
-				position: relative;
-				height: 50px;
-				background: rgb(88,124,169);
-			}
-			header>nav>ul>li{
-				position: relative;
-				width: 100px;
-				height: 50px;
-				float: left;
-			}
-			.new a,.zheng a,.index a{
+			.header a{
 				display: inline-block;
 				position: relative;
-				width: 100px;
-				height: 50px;
-				line-height: 50px;
-				background: linear-gradient(90deg,rgb(88,124,169),rgb(50,82,141));
+				width: 120px;
+				height: 40px;
+				line-height: 40px;
+				background: linear-gradient(90deg,#f00,#00f);
 				text-align: center;
 				color: #fff;
 				font-size: 18px;
 				text-decoration: none;
 			}
-			.new a::after,.zheng a::after{
+			.header {
+        		font-size: 0;
+        	}
+        	.a1::after,.a2::after{
 				content: '';
 				position: absolute;
-				left: 100px;
+				left: 120px;
 				width: 0;
 				height: 0;
-				border-left: 30px solid rgb(50,82,141);
-				border-top: 25px solid transparent;
-				border-bottom: 25px solid transparent;
+				border-left: 24px solid #00f;
+				border-top: 20px solid transparent;
+				border-bottom:20px solid transparent;
 				z-index: 10;
-			}
-			header>nav>ul>li>a:hover{
-				background: linear-gradient(90deg,#00f,#ACD6FF);
-			}
-			.new a:hover::after,.zheng a:hover::after{
-				border-left: 30px solid #ACD6FF;
-			}
+        	}
+        	.header a:hover{
+        		background: #f0f;
+        	}
+        	.header .a1:hover::after,.header .a2:hover::after{
+        		border-left: 24px solid #f0f;
+        	}
+        	article>section{
+        		width: 200px;
+        	}
         	article>section>h1{
         		text-align: center;
-        		font-size: 25px;
+        		font-size: 15px;
         	}
         	article>section>div>span{
         		font-size: 12px;
@@ -75,24 +63,24 @@
         	}
         	article>aside>div{
         		position: relative;
+        		width: 180px;
         		height: 30px;
         		border-top: 1px solid #666;
         		background: linear-gradient(180deg,#fff,#ccc);
         		border-bottom: 1px solid #999;
         		margin-left: 10px;
-        		margin-right: 10px;
         	}
 			article aside .left{
 				display: block;
-				width: 50px;
+				width: 70px;
 				font-size: 12px;
-				float: left;
 				line-height: 30px;
 				margin-left: 10px;
+				float: left;
 			}
 			article>aside>div>div{
 				width: 90px;
-				float: right;
+				float: left;
 				line-height: 30px;
 				text-align: right;
 				margin-right: 10px;
@@ -106,9 +94,8 @@
 				text-decoration: none;
 				color: #666;
 			}
-			article{
-				margin-left: 2px;
-				margin-right: 2px;
+			article>div{
+				width: 200px;
 			}
 			article>div>p{
 				text-indent: 2em;
@@ -117,38 +104,26 @@
 				font-size: 19px;
 			}
 			footer{
-				position: relative;
-				margin-top: 50px;
+				width: 200px;
 			}
 			footer>p{
-				text-align: center;
-				font-size: 9px;
+				width: 200px;
+				font-size: 7px;
 			}
-			footer>p>span{
-				display: block;
-				width: 33%;
-				float: left;
+			footer a{
+				color: #000;
+				text-decoration: none;
 			}
-			
         </style>
     </head>
     <body>
-		<header>
-			<nav>
-				<ul>
-					<li class="index">
-					<a href="#">首页</a>
-					</li>
-					<li class="new">
-					<a href="#">新闻中心</a>
-					</li>
-					<li class="zheng">
-					<a href="#">正文</a>
-					</li>
-				</ul>
-			</nav>
-		</header>
-		<article>
+    	<div class="header">
+    		<nav>
+    			<a href="" class="a1">新闻中心</a>
+    			<a href="" class="a2">正文</a>
+    		</nav>
+    	</div>
+    	<article>
     		<section>
     			<h1>发展信息经济 促进社会转型</h1>
     			<div>
@@ -172,9 +147,12 @@
     		</div>
     	</article>
     	<footer>
-    		<p><span>新华网手机版</span><span>Copyright ? 2014 	XINHUANET</span><a href="">导航</a> | <a href="">联系我们</a></p>
+    		<p>新华网手机版</p>
+    		<p>Copyright ? 2014 	XINHUANET</p>
+    		<p><a href="">导航</a> | <a href="">联系我们</a></p>
     	</footer>
-    	 <script>
+    </body>
+    <script>
 	    var $ = function(sel){
 	    	return document.querySelectorAll(sel);
 	    }
@@ -186,7 +164,7 @@
     	var hsize = 19;
     	a[0].onclick = function(e){
     		
-    		if(psize<30){
+    		if(psize<50){
     			psize += 1;
     			hsize += 1;
 				b[0].style.cssText="font-size:"+psize+"px";
@@ -208,5 +186,4 @@
     		return false;
     	}
     </script>
-    </body>
 </html>
