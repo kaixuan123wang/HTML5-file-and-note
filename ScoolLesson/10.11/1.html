@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>学习flex</title>
+        <style>
+			.box{
+				display: flex;
+				flex-flow: row wrap;
+				width: 300px;
+				height: 200px;
+				justify-content: space-around;
+				align-items: flex-start;
+				border: 1px #666 solid;
+				margin: 0 auto;
+			}
+			.box>div{
+				background: #f00;
+				order: 2;
+				margin: 0 5px;
+				flex: 1;
+			}
+			.box>div:nth-child(3){
+				color: yellow;
+				order: 1;
+				flex: 1 0 200px;
+				align-self: center;
+			}
+
+        </style>
+    </head>
+    <body>
+    	<div class="box">
+    		<div>1</div>
+    		<div>2</div>
+    		<div>3</div>
+    		<div>4</div>
+    	</div>
+    </body>
+</html>

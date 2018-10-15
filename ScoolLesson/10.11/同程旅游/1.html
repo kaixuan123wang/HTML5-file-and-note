@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style>
+        	*{
+        		margin: 0;
+        		padding: 0;
+        		
+        	}
+        	body{
+        		background: #f0f0f0;
+        	}
+        	a{
+        		text-decoration: none;
+				cursor: pointer;
+        	}
+			.head{
+				display: flex;
+				flex-flow:row wrap;
+				justify-content:space-between;
+				background: rgb(60,175,220);
+				height: 45px;
+			}
+			.head .a1,.head .a3{
+				display: inline-block;
+				width: 45px;
+			}
+			.head .a2{
+				display: inline-block;
+				width: 45px;
+				color: #fff;
+				font-size: 18px;
+				text-align: center;
+				line-height: 45px;
+			}
+			.head .a1{
+				margin-left: 10px;
+				background-image: url(images/header-nav.png);
+				background-position: -34px 13px;
+			}
+			.head .a3{
+				margin-right: 10px;
+				background-image: url(images/header-nav.png);
+				background-position: 15px 15px;
+			}
+			.nav .top,.nav .end{
+				display: flex;
+				flex-flow: row nowrap;
+				justify-content: center;
+				margin: 0 auto;
+			}
+			.nav a{
+				display: inline-block;
+				height: 100px;
+				width: 200px;
+				margin: 1px;
+				text-align: center;
+				color: #000;
+				background: #fff;
+				font-size: 14px;
+			}
+			.nav div a span{
+				display: block;
+				width: 40px;
+				height: 40px;
+				margin: 10px auto;
+				border-radius: 5px;
+			}
+			.nav .top .hotel span{
+				background: rgb(255,118,97);
+				background-image: url(images/navIcon.png);
+				background-size: 400px;
+				background-position: 788px -14px;
+			}
+			.nav .top .fly span{
+				background: rgb(60,175,220);
+				background-image: url(images/navIcon.png);
+				background-size: 400px;
+				background-position: 723px -14px;
+			}
+			.nav .top .scenery span{
+				background: rgb(144,204,0);
+				background-image: url(images/navIcon.png);
+				background-size: 400px;
+				background-position: 659px -14px;
+			}
+			.nav .top .selftrip span{
+				background: rgb(255,159,99);
+				background-image: url(images/navIcon.png);
+				background-size: 400px;
+				background-position: 595px -14px;
+			}
+			.nav .end .dujia span{
+				background: rgb(119,183,255);
+				background-image: url(images/navIcon.png);
+				background-size: 400px;
+				background-position: 786px -77px;
+			}
+			.nav .end .cruise span{
+				background: rgb(255,189,95);
+				background-image: url(images/navIcon.png);
+				background-size: 400px;
+				background-position: 722px -77px;
+			}
+			.nav .end .train span{
+				background: rgb(86,216,196);
+				background-image: url(images/navIcon.png);
+				background-size: 400px;
+				background-position: 658px -77px;
+			}
+			.nav .end .login span{
+				background: rgb(255,211,59);
+				background-image: url(images/navIcon.png);
+				background-size: 400px;
+				background-position: 595px -77px;
+			}
+			.ad .top,.ad .end{
+				display: flex;
+				flex-flow: row nowrap;
+				justify-content: center;
+			}
+			.ad .top a,.ad .end a{
+				position: relative;
+				display: inline-block;
+				width: 390px;
+				height:65px;
+				background: #fff;
+				margin:2px 5px 2px 5px;
+				}
+			.ad .top a h4{
+				font-size: 20px;
+				color:#f00;
+				font-weight: normal;
+				margin-top:5px;
+				margin-left: 5px;
+			}
+			.ad .end a h4{
+				font-size: 20px;
+				color:rgb(60,175,220);
+				font-weight: normal;
+				margin-top:5px;
+				margin-left: 5px;
+			}
+			.ad .top a em,.ad .end a em{
+				color:#ccc;
+				font-size: 10px;
+				margin:2px;
+				margin-left: 5px;
+			}
+			.ad .top a span,.ad .end a span{
+				position: absolute;
+				right: 0;
+				top:0;
+				display: inline-block;
+				width: 60px;
+				height: 65px;
+			}
+			.ad .top .hot span{
+				background-image: url(images/navIcon.png);
+				background-size: 300px;
+				background-position: 113px 13px;
+			}
+			.ad .top .low span{
+				background-image: url(images/navIcon.png);
+				background-size: 300px;
+				background-position: 56px -2px;
+			}
+			.ad .end .group span{
+				background-image: url(images/navIcon.png);
+				background-size: 300px;
+				background-position: 56px -61px;
+			}
+			.ad .end .around span{
+				background-image: url(images/navIcon.png);
+				background-size: 300px;
+				background-position: 114px -52px;
+			}
+			.foot{
+				display: flex;
+				flex-flow: column nowrap;
+				justify-content:center;
+				align-items: center;
+				background: rgb(60,175,220);
+				height: 100px;
+				color:#fff;
+			}
+			.foot a{
+				color:#fff;
+			}
+			.foot p{
+				width: 100%;
+				margin: 5px auto;
+				text-align: center;
+				font-size: 10px;
+			}
+			.foot p .cp{
+				color:#ccc;
+			} 
+			.foot .di{
+				color:#ccc;
+			}
+        </style>
+    </head>
+    <body>
+    	<header>
+    		<div class="head">
+    			<a href="#" class="a1"></a>
+    			<a href="#" class="a2">首页</a>
+    			<a href="#" class="a3"></a>
+    		</div>
+    	</header>
+    	<article>
+    		<nav>
+    			<div class="nav">
+    				<div class="top">
+    					<a href="#" class="hotel"><span></span>酒店预订</a>
+    					<a href="#" class="fly"><span></span>机票预订</a>
+    					<a href="#" class="scenery"><span></span>景点门票</a>
+    					<a href="#" class="selftrip"><span></span>周末游</a>
+    				</div>
+    				<div class="end">
+    					<a href="#" class="dujia"><span></span>出境游</a>
+    					<a href="#" class="cruise"><span></span>游轮</a>
+    					<a href="#" class="train"><span></span>火车票预订</a>
+    					<a href="#" class="login"><span></span>登陆/注册</a>
+    				</div>
+    			</div>
+    		</nav>
+    		<section>
+    			<div class="ad">
+	    			<div class="top">
+	    				<a href="#" class="hot">
+	    					<p>
+	    						<h4>热销榜</h4>
+	    						<em>哪里最好玩</em>
+	    					</p>
+	    					<span></span>
+	    				</a><a href="#" class="low">
+	    					<p>
+	    						<h4>最低价</h4>
+	    						<em>只有这一次</em>
+	    					</p>
+	    					<span></span>
+	    				</a>
+	    			</div>
+	    			<div class="end">
+	    				<a href="#" class="group">
+	    					<p>
+	    						<h4>团购</h4>
+	    						<em>优惠超出想象</em>
+	    					</p>
+	    					<span></span>
+	    				</a><a href="#" class="around">
+	    					<p>
+	    						<h4>周边景点</h4>
+	    						<em>近在身边</em>
+	    					</p>
+	    					<span></span>
+	    				</a>
+	    			</div>
+    			</div>
+    		</section>
+    	</article>
+    	<footer>
+    		<div class="foot">
+    			<p>
+    				<a href="#">电脑版</a> |
+    				<span class="cp">触屏版</span>
+    				<a href="#">帮助中心</a>
+    				<a href="#">意见反馈</a>
+    			</p>
+    			<p>
+    				<span>24小时服务热线：</span>
+    				<a href="tel:4007-555-555">4007-555-555</a>
+    			</p>
+    			<p class="di">
+    				©2014同程旅游
+    			</p>
+    		</div>
+    	</footer>
+    </body>
+</html>

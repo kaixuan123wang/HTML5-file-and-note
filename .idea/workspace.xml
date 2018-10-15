@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="37347436-9547-4fda-b44e-53a427042f4e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScoolLesson/boya/JavaScript/boya.js" beforeDir="false" afterPath="$PROJECT_DIR$/ScoolLesson/boya/JavaScript/boya.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScoolLesson/boya/boya.html" beforeDir="false" afterPath="$PROJECT_DIR$/ScoolLesson/boya/boya.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScoolLesson/boya/styles/boya.css" beforeDir="false" afterPath="$PROJECT_DIR$/ScoolLesson/boya/styles/boya.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,43 +17,47 @@
     <session id="-1213372371">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
+          <entry key="project.closed" value="14" />
           <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.20" value="2" />
           <entry key="project.open.time.21" value="2" />
-          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.23" value="2" />
+          <entry key="project.open.time.24" value="1" />
+          <entry key="project.open.time.27" value="1" />
+          <entry key="project.open.time.3" value="2" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="3" />
-          <entry key="html" value="1" />
+          <entry key="css" value="7" />
+          <entry key="html" value="5" />
           <entry key="js" value="1" />
           <entry key="png" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="3" />
-          <entry key="HTML" value="1" />
+          <entry key="CSS" value="7" />
+          <entry key="HTML" value="5" />
           <entry key="Image" value="2" />
           <entry key="JavaScript" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="838" />
-          <entry key="html" value="111" />
+          <entry key="css" value="8860" />
+          <entry key="html" value="4534" />
           <entry key="js" value="872" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="839" />
-          <entry key="HTML" value="111" />
+          <entry key="CSS" value="8861" />
+          <entry key="HTML" value="4534" />
           <entry key="JavaScript" value="871" />
         </counts>
       </usages-collector>
@@ -69,6 +70,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -81,6 +84,14 @@
         <option value="$PROJECT_DIR$/ScoolLesson/boya/JavaScript/boya.js" />
         <option value="$PROJECT_DIR$/ScoolLesson/boya/boya.html" />
         <option value="$PROJECT_DIR$/ScoolLesson/boya/styles/boya.css" />
+        <option value="$PROJECT_DIR$/StudySelf/BookEX/1-1.html" />
+        <option value="$PROJECT_DIR$/StudySelf/BookEX/1-1.css" />
+        <option value="$PROJECT_DIR$/StudySelf/BookEX/1-2.css" />
+        <option value="$PROJECT_DIR$/StudySelf/BookEX/1-2.html" />
+        <option value="$PROJECT_DIR$/StudySelf/BookEX/1-3.css" />
+        <option value="$PROJECT_DIR$/StudySelf/BookEX/1-3.html" />
+        <option value="$PROJECT_DIR$/StudySelf/BookEX/1-4.css" />
+        <option value="$PROJECT_DIR$/StudySelf/BookEX/1-4.html" />
       </list>
     </option>
   </component>
@@ -90,8 +101,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-245" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1003" />
+    <option name="y" value="82" />
     <option name="width" value="1750" />
     <option name="height" value="970" />
   </component>
@@ -112,34 +124,13 @@
             <path>
               <item name="H5+Css3" type="b2602c69:ProjectViewProjectNode" />
               <item name="H5+Css3" type="462c0819:PsiDirectoryNode" />
-              <item name="ScoolLesson" type="462c0819:PsiDirectoryNode" />
+              <item name="StudySelf" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="H5+Css3" type="b2602c69:ProjectViewProjectNode" />
               <item name="H5+Css3" type="462c0819:PsiDirectoryNode" />
-              <item name="ScoolLesson" type="462c0819:PsiDirectoryNode" />
-              <item name="boya" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="H5+Css3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="H5+Css3" type="462c0819:PsiDirectoryNode" />
-              <item name="ScoolLesson" type="462c0819:PsiDirectoryNode" />
-              <item name="boya" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="H5+Css3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="H5+Css3" type="462c0819:PsiDirectoryNode" />
-              <item name="ScoolLesson" type="462c0819:PsiDirectoryNode" />
-              <item name="boya" type="462c0819:PsiDirectoryNode" />
-              <item name="JavaScript" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="H5+Css3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="H5+Css3" type="462c0819:PsiDirectoryNode" />
-              <item name="ScoolLesson" type="462c0819:PsiDirectoryNode" />
-              <item name="boya" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
+              <item name="StudySelf" type="462c0819:PsiDirectoryNode" />
+              <item name="BookEX" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -148,8 +139,11 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SearchEverywhereHistoryKey" value="fortun&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Javascript" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -183,17 +177,23 @@
       <workItem from="1536056142155" duration="616000" />
       <workItem from="1536383291067" duration="1792000" />
       <workItem from="1536405705249" duration="853000" />
+      <workItem from="1538729257694" duration="619000" />
+      <workItem from="1538735094900" duration="5803000" />
+      <workItem from="1538787307118" duration="5156000" />
+      <workItem from="1538911834325" duration="6106000" />
+      <workItem from="1538992263039" duration="1952000" />
+      <workItem from="1539169374641" duration="58000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16924000" />
+    <option name="totallyTimeSpent" value="36618000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-196" y="0" width="1400" height="776" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.2771261" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.24966975" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
@@ -218,27 +218,66 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ScoolLesson/boya/boya.html">
+    <entry file="file://$PROJECT_DIR$/ScoolLesson/boya/boya.html" />
+    <entry file="file://$PROJECT_DIR$/ScoolLesson/boya/styles/boya.css" />
+    <entry file="file://$PROJECT_DIR$/ScoolLesson/boya/博雅网效果图.png" />
+    <entry file="file://$PROJECT_DIR$/ScoolLesson/boya/JavaScript/boya.js" />
+    <entry file="file://$PROJECT_DIR$/StudySelf/BookEX/1-1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="89" column="26" selection-start-line="89" selection-start-column="26" selection-end-line="89" selection-end-column="26" />
+        <state relative-caret-position="322">
+          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ScoolLesson/boya/styles/boya.css">
+    <entry file="file://$PROJECT_DIR$/StudySelf/BookEX/1-1.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="232" column="14" selection-start-line="232" selection-start-column="14" selection-end-line="232" selection-end-column="14" />
+        <state relative-caret-position="5152">
+          <caret line="224" column="23" selection-start-line="224" selection-start-column="23" selection-end-line="224" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ScoolLesson/boya/博雅网效果图.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ScoolLesson/boya/JavaScript/boya.js">
+    <entry file="file://$PROJECT_DIR$/StudySelf/BookEX/1-2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+        <state relative-caret-position="391">
+          <caret line="17" column="10" lean-forward="true" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudySelf/BookEX/1-2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="252" column="31" selection-start-line="252" selection-start-column="31" selection-end-line="252" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudySelf/BookEX/1-3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudySelf/BookEX/1-3.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6601">
+          <caret line="287" column="1" selection-start-line="287" selection-start-column="1" selection-end-line="287" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudySelf/BookEX/1-4.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="61" column="19" lean-forward="true" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudySelf/BookEX/1-4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+          <folding>
+            <element signature="n#style#0;n#a#1;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

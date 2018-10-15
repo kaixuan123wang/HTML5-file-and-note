@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Kbd</title>
+        <style>
+			.main{
+				margin: 0 auto;	
+				width: 620px;
+				height: 200px;
+				border: 1px #000 solid;
+			}
+
+			.main>div>kbd{
+				display: block;
+				width: 50px;
+				height: 50px;
+				border: 1px solid #000;
+				float: left;
+				line-height: 50px;
+				text-align: center;
+				font-size: 20px;
+				margin: 5px;
+				box-shadow: 10px #666;
+			}
+			.main>div{
+				overflow: hidden;
+			}
+			.d2{
+				margin-left: 25px;
+			}
+			.d3{
+				margin-left: 50px;
+			}
+        </style>
+    </head>
+    <body>
+		<main class="main">
+		</main>
+		<script>
+		var $=function(sel){
+			return document.querySelector(sel);
+		}
+		var str = "QWERTYUIOPASDFGHJKLZXCVBNM";
+		var arr = str.split("");
+		var s = "";
+		for(var i=0;i<=25;i++){
+			if(arr[i] =="Q"){
+				s+="<div class='d1'>";
+			}
+			if(arr[i] == "A"){
+				s+="</div><div class='d2'>";
+			}
+			if(arr[i] == "Z"){
+				s+="</div><div class='d3'>";
+			}
+			s+="<kbd>"+arr[i]+"</kbd>";
+		}
+		s+="</div>";
+		$("main").innerHTML=s;
+		</script>
+    </body>
+</html>
