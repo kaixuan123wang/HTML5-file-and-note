@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .all {
+        position: relative;
+        width: 700px;
+        height: 700px;
+        margin: 0 auto;
+        background: #999;
+    }
+    
+    .all div {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="all"></div>
+    <script>
+    var $ = function(sel) {
+        return document.querySelectorAll(sel);
+    };
+    var all = $(".all")[0];
+    var Width = window.innerWidth;
+    var Height = window.innerHeight;
+    if (Width < Height) {
+        Height = Width;
+    } else {
+        Width = Height;
+    }
+    for (var i = 0; i < Height - 100; i += 100) {
+        all.innerHTML += '<div class="x"></div>';
+    };
+    for (var i = 0; i < Height - 100; i += 100) {
+        all.innerHTML += '<div class="y"></div>';
+    };
+    var divx = $(".x");
+    var divy = $(".y");
+    var r = null;
+    var g = null;
+    var b = null;
+    var rgb = null;
+
+    function bigbong() {
+        for (var i = 0; i < divx.length; i++) {
+            r = Math.floor(Math.random() * 256);
+            g = Math.floor(Math.random() * 256);
+            b = Math.floor(Math.random() * 256);
+            rgb = 'rgb(' + r + ',' + g + ',' + b + ')';
+            divx[i].style.left = i * 100 + "px";
+            divx[i].style.top = i * 100 + "px";
+            divx[i].style.background = rgb;
+        };
+        for (var i = 0; i < divy.length; i++) {
+            r = Math.floor(Math.random() * 256);
+            g = Math.floor(Math.random() * 256);
+            b = Math.floor(Math.random() * 256);
+            rgb = 'rgb(' + r + ',' + g + ',' + b + ')';
+            divy[i].style.right = i * 100 + "px";
+            divy[i].style.top = i * 100 + "px";
+            divy[i].style.background = rgb;
+        };
+        setTimeout('bigbong()', 100);
+    };
+    bigbong();
+    </script>
+</body>
+
+</html>
