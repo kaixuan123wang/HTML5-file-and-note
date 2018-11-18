@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style>
+	        div{
+	        	margin: 0 auto;
+	        	width: 500px;
+	        	height: 500px;
+	        }
+			#cvs{
+				border: 1px solid #000;
+			}
+            div>span{
+                display: inline-block;
+                width: 50px;
+                height: 50px;
+            }
+            .color{
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                height: 50px;
+            }
+            .green{
+                background: #0f0;
+            }
+            .red{
+                background: #f00;
+            }
+            .blue{
+                background: #00f;
+            }
+        </style>
+    </head>
+    <body>
+    <div>
+    <canvas id="cvs" width="500" height="500"></canvas>
+    </div>
+    <div class="color">
+            <span class="green"></span>
+            <span class="red"></span>
+            <span class="blue"></span>
+    </div>
+    <script>
+    var $=function(sel){
+    	return document.querySelectorAll(sel);
+    };
+    var cvs = $("#cvs")[0];
+    var cc = $(".color span");
+    var ctx = cvs.getContext("2d");
+    var color = "#0f0";
+    ctx.strokeStyle=color;
+    var x,y;
+    var yc = cvs.offsetTop;
+    var xc = cvs.offsetLeft;
+    var a = null;
+    console.log(xc+","+yc);
+    for(var i=0;i<3;i++){
+        cc[i].onclick = function(){
+            a = window.getComputedStyle(cc[i],null);
+            alert(a.background);
+        }
+    }
+    cvs.onmousedown = function(e){
+    	e=e||event;
+    	x = e.clientX-xc;
+    	y = e.clientY-yc;
+    	ctx.moveTo(x,y);
+    	cvs.onmousemove=function(e){
+    	x = e.clientX-xc;
+    	y = e.clientY-yc;
+    	ctx.lineTo(x,y);
+    	ctx.stroke();
+    	}
+    }
+    cvs.onmouseup = function(){
+    		cvs.onmousemove = null;
+    	}
+    
+    </script>
+    </body>
+</html>

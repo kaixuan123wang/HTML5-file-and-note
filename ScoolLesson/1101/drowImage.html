@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style>
+		#cvs{
+			border: 1px #999 solid;
+		}
+	</style>
+</head>
+<body>
+	<canvas id="cvs" width="800" height="400"></canvas>
+	<img src="./ch.jpg" id="img" hidden="hidden">
+	<script>
+	var cvs = document.getElementById('cvs');
+	var ctx = cvs.getContext("2d");
+	ctx.fillStyle="#f00";
+	// var img = new Image();
+	// img.src = "./ch.jpg";
+	var img = document.getElementById('img');
+	img.onload=function(){
+		ctx.drawImage(img,0,0,800,400);
+		var ptn = ctx.createPattern(img,'repeat');
+		ctx.fillStyle = ptn;
+		ctx.fillRect(0,0,800,300);
+
+	};
+	ctx.rect(20,20,140,140);
+	ctx.clip();
+
+	
+
+	</script>
+</body>
+</html>

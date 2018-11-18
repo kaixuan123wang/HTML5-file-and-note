@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<canvas id="cvs" width="800" height="500"></canvas>
+		<script>
+			function draw(){
+				var cvs = document.getElementById("cvs");
+				var ctx = cvs.getContext("2d");
+				ctx.beginPath();
+				ctx.moveTo(75,50);
+				ctx.lineTo(100,75);
+				ctx.lineTo(100,25);
+				ctx.fill();
+			}
+			draw();
+		</script>
+</html>

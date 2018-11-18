@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style>
+			.layout{
+				width: 800px;
+				margin: 0 auto;
+			}
+			#cvs{
+				border: 1px solid #000;
+			}
+        </style>
+    </head>
+    <body>
+   		<div class="layout">
+   			<canvas id="cvs" width="800" height="400"></canvas>
+   		</div>
+   		<script>
+   			var cvs = document.querySelector("#cvs");
+   			var ctx = cvs.getContext("2d");
+   			ctx.fillStyle="#f00";
+   			ctx.strokeStyle="#00f";
+   			// ctx.beginPath();
+   			// ctx.arc(60,60,50,0,1*Math.PI);
+   			// ctx.stroke();
+   			// ctx.fill();
+   			ctx.beginPath();
+   			// ctx.moveTo(10, 10);
+   			// ctx.lineTo(100, 200)
+   			// ctx.arcTo(200,200,400, 400, 404);
+   			ctx.moveTo(50, 50);
+   			ctx.lineTo(100,50);
+   			ctx.arcTo(200,50,200,100,50);
+   			ctx.lineTo(200,400);
+   			ctx.stroke();
+
+   		</script>
+    </body>
+</html>

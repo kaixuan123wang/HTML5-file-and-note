@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<canvas id="cvs" width="800" height="400"></canvas>
+		<script>
+			var cvs = document.getElementById("cvs");
+			var ctx = cvs.getContext("2d");
+			ctx.textAlign="center";//水平对齐,start|end|left|right|center
+			ctx.textBaseline="top";//垂直对齐,top|hanging|middle|alphabetic|bottom
+			ctx.fillStyle="#0f0";//设置字体填充颜色
+			ctx.font="20px 微软雅黑";//设置字体样式
+			ctx.fillText("我我我哦我",100,150);//设置字体内容和xy轴位置
+			ctx.strokeStyle="#f00";//设置边框字体颜色
+			ctx.strokeText("wowow",150,200);设置字体内容和xy轴位置
+			
+		</script>
+	</body>
+</html>

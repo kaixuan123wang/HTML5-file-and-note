@@ -62,16 +62,16 @@ HTML5语义标记
 6.header
 7.footer
 8.h1-h6
-*9.main 网页中只能用一次
+*9.main 网页中只能用一次，指body中的主要内容且只能用于body下级（body>main）
 三.分组标记
 1.p
 2.hr
-*3.pre  预格式标记
-*4.blockquote  块标记
+*3.pre  预格式标记，预排版标签，不动如山的输出，在输出代码内容时与code标签一起使用
+*4.blockquote  块标记，浏览器会在blockquote元素前后添加换行并增加外边距
 5.ul/ol>li
-*6.dl/dt/dd
-*7.figure  
-*8.figcaption
+*6.dl/dt/dd	表格标签，<dl><dt>title</dt>content<dd></dd></dl>
+*7.figure  用来表示网页制作页面上一块独立的内容，将其从网页上移除不会对网页造成影响，图片、统计图、代码示例
+*8.figcaption	通常用来做为figure内容的注释，一个figure中只能有一个figcaption
 9.div
 *四.表格标记
 1.table  表格

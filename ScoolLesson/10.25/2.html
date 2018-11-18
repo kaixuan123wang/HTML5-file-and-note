@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+    <canvas id="cvs" width="600" height="500">
+    	
+    </canvas>
+    <script>
+    	var $ = function(id){
+    		return document.getElementById(id);
+    	};
+    	var cvs = $("cvs");
+    	var ctx = cvs.getContext("2d");
+    	ctx.lineWidth = 10;
+    	ctx.beginPath();
+    	
+    	ctx.strokeStyle = "#f00";
+    	ctx.moveTo(15,10);
+    	ctx.lineTo(400,200);
+    	ctx.lineTo(15,200);
+    	ctx.lineTo(15,10);
+    	ctx.closePath();
+    	ctx.moveTo(50,10);
+    	ctx.lineTo(440,10);
+    	ctx.lineTo(440,200);
+    	ctx.lineTo(50,10);
+    	ctx.closePath();
+    	ctx.stroke();
+    </script>
+    </body>
+</html>

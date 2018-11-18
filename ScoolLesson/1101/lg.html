@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+    <canvas id="cvs" width="800" height="400"></canvas>
+    <script>
+    var cvs = document.getElementById("cvs");
+    var ctx = cvs.getContext("2d");
+    // var lg1 = ctx.createLinearGradient(10,10,10,100);
+    var rg1 = ctx.createRadialGradient(150, 150, 20, 150, 150,120);
+    rg1.addColorStop(0,'#f00');
+    rg1.addColorStop(.1,'#ff0');
+    rg1.addColorStop(1,'#099');
+    ctx.fillStyle = rg1;
+    ctx.shadowColor="#999";
+    ctx.shadowOffsetX = 10;
+    ctx.shadowOffsetY = 10;
+    ctx.shadowBlur = 20;
+    ctx.arc(150,150,120,0,2*Math.PI);
+    ctx.fill();
+    </script>
+    </body>
+</html>

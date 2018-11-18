@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			#cvs{
+				border: 1px solid #000;
+			}
+		</style>
+	</head>
+	<body>
+		<canvas id="cvs" width="800" height="400"></canvas>
+		<script type="text/javascript">
+			var cvs = document.getElementById("cvs");
+			var ctx = cvs.getContext("2d");
+			ctx.fillStyle="#ccc";
+			ctx.fillRect(50,50,100,60);//绘制矩形
+		</script>
+	</body>
+</html>

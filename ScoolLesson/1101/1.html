@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style>
+			canvas{
+				border: 1px solid #000;
+			}
+        </style>
+    </head>
+    <body>
+    	<canvas width="800" height="500" id="cvs">
+    		
+    	</canvas>
+    	<script>
+    		var $=function(sel){
+    			return document.getElementById(sel);
+    		};
+    		var cvs = $("cvs");
+    		var ctx = cvs.getContext("2d");
+    		ctx.strokeStyle = "#000";
+    		ctx.lineWidth = 2;
+    		var x0,y0;
+    		cvs.onmousedown = function(e){
+    			e=e || event;
+    			var left = cvs.getBoundingClientRect().left;
+    			var top = cvs.getBoundingClientRect().top;
+    			x0 = e.clientX - left;
+    			y0 = e.clientY - top;
+    			ctx.moveTo(x0,y0);
+    			this.onmousemove = function(e){
+    				e=e || event;
+    				x=e.clientX-left;
+    				y=e.clientX-top;
+    				ctx.lineTo(x,y);
+    				ctx.stroke();
+    			}
+    			this.onmouseup=function(e){
+    				this.onmousemove=null;
+    			}
+    		}
+    	</script>
+    </body>
+</html>

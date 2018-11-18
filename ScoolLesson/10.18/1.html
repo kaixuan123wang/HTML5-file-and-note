@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.article{
+				width: 500px;
+				margin: 0 auto;
+				border: 1px solid #000;
+			}
+			p{
+				width: 500px;
+				height: 50px;
+			}
+			.img{
+				width: 500px;
+				height: 100px;
+				background: #f90;
+			}
+			.remarks{
+				position: relative;
+				height: 100px;
+			}
+			.remarks span{
+				position: absolute;
+				left: 0px;
+				width: 150px;
+				height: 100px;
+				line-height: 100px;
+			}
+			.remarks textarea{
+				position: absolute;
+				left: 151px;
+				top: 0;
+				height: 98px;
+				width: 346px;
+				resize:none;
+			}
+			ul li{
+				width: 500px;
+				height: 50px;
+				line-height: 50px;
+				border: 1px solid #000;
+				list-style: none;
+			}
+			ul li span{
+				display: inline-block;
+				height: 50px;
+				width: 150px;
+				border-right: 1px solid #000;
+			}
+			.sub input{
+				width: 50px;
+				height: 30px;
+			}
+        </style>
+    </head>
+    <body>
+    <div class="article">
+    	<form action="1.php" method="post">
+    		<ul>
+    		<li class="img"></li>
+    		<li>旅游网会员注册</li>
+    		<li>
+    			<label for="username">
+    			<span>用户名：</span>
+    			<input type="text" required autofocus name="username" id="username" placeholder="请输入用户名">
+    			</label>
+    		</li>
+    		<li>
+    			<label for="">
+    			<span>密码：</span>
+    			<input type="password" required id="pwd" name="pwd" placeholder="请输入密码">
+    			</label>
+    		</li>
+    		<li>
+    			<label for="repwd">
+    			<span>确认密码：</span>
+    			<input type="password" required name="repwd" placeholder="请再次输入密码"></label>
+    		</li>
+    		<li>
+    		<label for="sex">
+    			<span>性别：</span>
+    			<input type="radio" name="sex" id="sex" value="man" checked>男
+    			<input type="radio" name="sex" id="sex" value="woman">女
+    			</label>
+    		</li>
+    		<li>
+    			<label for="email">
+    			<span>Email:</span>
+    			<input type="email" name="email" id="email" placeholder="请输入邮箱">
+    			</label>
+    		</li>
+    		<li>
+    		<label for="tel">
+    			<span>Phone:</span>
+    			<input type="tel" name="tel" id="tel" placeholder="请输入电话号码"></label>
+    		</li>
+    		<li>
+    		<label for="age">
+    			<span>年龄：</span>
+    			<input type="number" name="age" id="age" placeholder="请输入年龄"></label>
+    		</li>
+    		<li>
+    		<label for="maths">
+    			<span>专业：</span>
+    			<input type="text" list="maths" placeholder="maths" required name:"maths">
+    			<datalist id="maths">
+    				<option value="移动应用开发" label="移动应用开发">
+    				<option value="计算机应用" label="计算机应用">
+    				<option value="动漫设计" label="动漫设计">
+    			</datalist>
+    			</label>
+    		</li>
+    		<li>
+    		<label for="birth">
+    			<span>出生日期：</span>
+    			<input type="date" name="birth" id="birth"></label>
+    		</li>
+    		<li>
+    		<label for="week">
+    			<span>周数：</span>
+    			<input type="week" name="week"></label>
+    		</li>
+    		<li>
+    		<label for="color">
+    			<span>您选择的颜色：</span>
+    			<input type="color" name="color" id="color"></label>
+    		</li>
+    		<li>
+    		<label for="">
+    			<span>英语等级：</span>
+    			<input type="range" name="English" id="English" max="4" min="0" list="class" value="0">4级
+				<datalist id="class">
+					<option value="0"></option>
+					<option value="1"></option>
+					<option value="2"></option>
+					<option value="3"></option>
+					<option value="4"></option>
+				</datalist>
+			</label>
+			</li>
+    		<li>
+    		<label for="hobby">
+    			<span>爱好：</span>
+    			<input type="checkbox" name="hobby" value="outdoors">户外
+    			<input type="checkbox" name="hobby" id="music">音乐
+    			<input type="checkbox" name="hobby" id="shopping">购物
+    			<input type="checkbox" name="hobby" id="other">其他
+    			</label>
+    		</li>
+    		<li>
+    		<label for="add">
+    		<span>所在地：</span>
+    		<select name="add" id="add">
+    				<option value="户外">北京</option>
+    				<option value="音乐">上海</option>
+    				<option value="购物">天津</option>
+    				<option value="其他">成都</option>
+    			</select>
+    			</label>
+    		</li>
+    		<li class="remarks">
+    		<label for="remarks">
+    			<span>备注：</span>
+    			<textarea name="remarks" cols="30" rows="6" placeholder="此处添加备注"></textarea>
+    			</label>
+    		</li>
+    		<li class="sub">
+    			<span><input type="submit" value="提交" name="sbt"></span>
+    			<input type="reset" name="reset">
+    		</li>
+    		</ul>
+    	</form>
+    </div>
+    </body>
+</html>

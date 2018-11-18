@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			#cvs{
+				border:1px solid #000;
+			}
+		</style>
+	</head>
+	<body>
+		<canvas id="cvs" width="800" height="400"></canvas>
+		<script>
+			var cvs = document.getElementById("cvs");
+			var ctx = cvs.getContext("2d");
+			ctx.fillStyle="#00f";
+			ctx.fillRect(50,50,100,60);
+			ctx.strokeStyle="#00FF00";
+			ctx.linWidth=6;
+			ctx.lineJoin="miter";
+			ctx.strokeRect(100,150,100,65);
+			ctx.lineJoin="round";
+			ctx.strokeRect(200,200,100,65);
+			ctx.lineJoin="bevel";
+			ctx.strokeRect(300,250,100,65);
+		</script>
+	</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<canvas id="cvs" width="800" height="400"></canvas>
+	<script>
+		var cvs = document.getElementById('cvs');
+		var ctx = cvs.getContext("2d");
+		ctx.fillStyle="#00f";
+		ctx.strokeStyle = "#f00";
+		var rg1 = ctx.createLinearGradient(100,200,200,300);
+		rg1.addColorStop(0,'#f00');
+		rg1.addColorStop(.1,'#0f0');
+		ctx.fillStyle=rg1;
+		ctx.strokeStyle=rg1;
+		ctx.font="48px Microsoft Yahe";
+		ctx.fillText("移动应用开发专业",10,50);
+		ctx.strokeText("移动应用开发专业",100,100);
+
+	</script>
+</body>
+</html>

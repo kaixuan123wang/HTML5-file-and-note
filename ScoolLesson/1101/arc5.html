@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+    	<canvas width=800 height=500 id="cvs" ></canvas>
+    	<script>
+    		var cvs = document.getElementById("cvs");
+    		ctx = cvs.getContext("2d");
+    		ctx.strokeStyle = "#000";
+    		ctx.lineWidth = 2;
+    		ctx.beginPath();
+    		ctx.moveTo(50, 50);
+    		ctx.arc(x, y, radius, startAngle, endAngle, anticlockwise)
+    	</script>
+    </body>
+</html>

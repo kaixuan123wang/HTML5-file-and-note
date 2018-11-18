@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>canvas</title>
+        <style>
+			#cvs{
+				border: 1px solid #000;
+			}
+        </style>
+    </head>
+    <body>
+    	<canvas id="cvs" width="300" height="400">
+    		您的浏览器不支持canvas绘图
+    	</canvas>
+    	<script>
+    	var $ = function(id){
+    		return document.getElementById(id);
+    	};
+    	//制作画布
+    	var cvs = $("cvs");
+    	//准备画笔
+    	var ctx = cvs.getContext("2d");//webgl为3d
+    	var ctx1 = cvs.getContext("2d");
+    	//指定画笔样式
+    	
+    	ctx.strokeStyle = "#00f";
+    	ctx.shadowColor = "#000";
+    	ctx.shadowOffsetX = 10;
+    	ctx.shadowOffsetY = 10;
+    	ctx.shadowBlur = 10;
+    	ctx.lineWidth = 2;
+    	ctx.globalAlpha=.5;
+    	ctx1.fillStyle = "#ff0";
+    	ctx1.strokeStyle = "#A4A400";
+    	ctx1.lineWidth = 2;
+    	ctx1.globalAlpha=.5;
+    	//var lg1 = ctx.createLinearGradient(xStart,yStart,xEnd,yEnd);
+    	// lg1.addColorStop(0, color);
+    	// lg1.addColorStop(.5, color);
+    	// lg1.addColorStop(1, color);
+    	// ctx.fillStyle=lg1;
+    	//var rg1 = ctx.createLinearGradient(xStart,yStart,radiusStart,xEnd,yEnd,radiusEnd);
+    	//绘制图形
+    	ctx.fillRect(10,10,100,100);
+    	ctx.fillStyle = "#f00";
+    	ctx.fillRect(50,50,100,100);
+    	ctx.fill();
+    	ctx.strokeRect(50,50,60,60);
+    	ctx.stroke();
+
+
+    	</script>
+    </body>
+</html>

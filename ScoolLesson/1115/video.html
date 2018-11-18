@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			#layout{
+				width: 800px;
+				margin: 0 auto;
+			}
+			#ctrl{
+				border: 1px solid #000;
+				height: 50px;
+				overflow: hidden;
+				width: 700px;
+				margin: 0 auto;
+			}
+			#back,#vdstrat,#vdend,#pre,#pgv,#pg,#nov,#all{
+				height: 30px;
+				float: left;
+				margin-top: 10px;
+				margin-left: 10px;
+			}
+			#play{
+				height: 50px;
+				width: 50px;
+				float: left;
+				background: url(timg.jpg);
+				background-size: 300px;
+				background-position: 0 0;
+			}
+        </style>
+    </head>
+    <body>
+    	<div id="layout">
+    		<!-- <video src="video/video.mp4" controls>
+    			此浏览器版本不支持video，请升级
+    		</video> -->
+    		<video id="vd">
+    			<source src="video/video.mp4" type="video/mp4">
+    			<source src="video/video.ogv" type="video/ogg">
+    		</video>
+    		<div id="ctrl">
+    			<button id="play"></button>
+    			<button id="back"><</button>
+    			<label id="vdstrat">当前播放：0.00</label>
+				<label id="vdend"></label>
+    			<button id="pre">></button>
+    			<label id="pgv">音量：50%</label>
+  				<input type="range" name="pg" id="pg" max="100" min="0" value="50">
+  				<button id="nov">静音</button>
+  				<button id="all">全屏</button>
+    		</div>
+    	</div>
+    	
+    	<script>
+    		var $ = function(id){
+    			return document.getElementById(id);
+    		};
+    		var vd = $("vd");
+    		var play = $("play");
+    		var pre = $("pre");
+    		var back = $("back");
+    		var pg = $("pg");
+    		var pgv = $("pgv");
+    		var nov = $("nov");
+    		play.onclick = function(e){
+    			if(vd.paused){
+    				vd.play();
+    				play.style.backgroundPosition = "-100px 0";
+    			}else{
+    				vd.pause();
+    				play.style.backgroundPosition = "0 0";
+    			}
+    		};
+    		pre.onclick = function(e){
+    			vd.currentTime+=5;
+    			vd.play();
+    			play.style.backgroundPosition = "-100px 0";
+    		};
+    		back.onclick = function(e){
+    			vd.currentTime-=5;
+    			vd.play();
+    			play.style.backgroundPosition = "-100px 0";
+    		};
+    		pg.onchange = function(e){
+    			if(pg.value == 0 && vd.muted){
+    				vd.muted = true;
+    				pgv.innerHTML = "音量：静音";
+    			}else{
+    				vd.muted = false;
+    				vd.volume = pg.value/100;
+    				pgv.innerHTML = "音量："+pg.value+"%";
+    			}
+    		};
+    		nov.onclick = function(e){
+    			if(vd.muted && pg.value!=0){
+    				vd.muted = false;
+    				nov.innerHTML = "静音";
+    			}else{
+    				vd.muted = true;
+    				nov.innerHTML = "关闭静音";
+    			}
+    		};
+    		var pro = $("pro");
+    		var vdend = $("vdend");
+    		vd.onloadedmetadata = function(){
+    			vdend.innerHTML = "总时长：" + vd.duration;
+    			var alltime = vd.duration;
+    		};
+    		vd.ontimeupdate = function(e){
+    			vdstrat.innerHTML="当前播放："+vd.currentTime;
+    		}
+    		function showFull(){
+				vd.webkitrequestFullscreen();
+			};
+			var all = $("all");
+			all.onclick = showFull();
+    		
+    		
+			
+
+
+    	</script>
+    </body>
+</html>
