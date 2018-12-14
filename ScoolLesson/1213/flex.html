@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <style>
+			.head,.foot,main{
+				width: 100%;
+			}
+			main{
+				display: flex;
+				flex-flow: row nowrap;
+				justify-content: space-between;
+			}
+			main div{
+				border: 1px solid #000;
+			}
+			main div:first-child{
+				flex: 1;
+			}
+			main div:nth-child(2){
+				flex: 4;
+				margin: 0 15px;
+			}
+			main div:last-child{
+				flex: 1;
+			}
+        </style>
+    </head>
+    <body>
+    <div class="all">
+    		<div class="head">
+    			头部
+    		</div>
+    		<main>
+    			<div class="left">
+    				←
+    			</div>
+    			<div class="center">
+    				中
+    			</div>
+    			<div class="right">
+    				→
+    			</div>
+    		</main>
+    		<div class="foot">
+    			尾部
+    		</div>
+    	</div>
+    </body>
+</html>

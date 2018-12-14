@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.all{
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: space-around;
+		}
+		#obj1,#obj2{
+			width: 500px;
+			height: 500px;
+			background: #A000FF;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<!-- 移动优先，优雅降阶 -->
+	<div class="all" id="all">
+		<div id="obj1">放置</div>
+		<img src="u=2474588166,129593410&fm=26&gp=0.gif" alt="" id="src">
+		<div id="obj2"></div>
+	</div>
+	<script>
+		var $=function(id){
+			return document.getElementById(id);
+		}
+		var obj = $("obj1"),src = $("src");
+		var move = function(src,obj){
+			src.draggable="true";
+			src.ondragstart = function(e){
+			e.dataTransfer.setData("Text",e.target.id);
+		}
+			obj.ondragover = function(e){
+			e.preventDefault();
+			obj.style.cssText = "border:5px #f00 solid";
+		}
+			obj.ondragleave = function(e){
+			obj.style.cssText = "border:5px #0f0 solid";
+		}
+			obj.ondrop = function(e){
+			e.preventDefault();
+			var o = e.dataTransfer.getData("Text");
+			e.target.appendChild($(o));
+			obj.style.cssText = "border:none";
+		}
+		}
+		src.onload = move(src,obj);
+		var obj2 = $("obj2");
+		src.onload = move(src,obj2);
+	</script>
+</body>
+</html>
